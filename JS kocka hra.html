@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>javascript kocka</title>
+	<link rel="stylesheet" href="JS kocka hra.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+
+		<div id="playerOne" class="players playerOne active">
+			<div class="score">
+				<p class="textP">Score first player</p>
+				<p id="score1" class="textNumber">44</p>
+			</div>
+		</div>
+		
+		<div id="playerTwo" class="players playerTwo">
+			<div class="score">
+				<p class="textP">Score second player</p>
+				<p id="score2" class="textNumber">44</p>
+			</div>
+		</div>
+		<div class="clear-fix"></div>
+
+	
+		<div class="currentScore currentScoreOne">
+			<div class="currentScore1">
+				<p class="textP">Current score first player</p>
+				<p id="currentScore1" class="textNumber">4</p>
+			</div>
+		</div>
+		<div class="currentScore currentScoreTwo">
+			<div class="currentScore2">
+				<p class="textP">Current score second player</p>
+				<p id="currentScore2" class="textNumber">49</p>
+			</div>
+		</div>
+
+		<div class="buttons">
+			<button id="rollDice" onclick='shake(),setTimeout(rollEffect,100),setTimeout(rollEffect,200),setTimeout(rollEffect,350),setTimeout(rollEffect,500),setTimeout(rollEffect,600),setTimeout(rollDice,800)'>ROLL DICE</button>
+			<button id="holdScore" onclick="holdScore()" >HOLD SCORE</button>
+			<button onclick="newGame()">NEW GAME</button>
+		</div>
+
+		<div id="dice" class="dice">
+			<img id="diceImg" src="img/1.jpg" alt="">
+		</div>
+		
+
+		
+
+
+		
+	</div>
+</div>
+
+
+
+
+
+
+</body>
+	<script src="JS kocka hra.js"></script>
+</html>
